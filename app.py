@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect, send_from_directory
 import csv
 import os
 
+print("Starting Task Logger Application...")
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = os.path.dirname(os.path.abspath(__file__))
 
